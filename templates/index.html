@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <!-- Connected to the static CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <!-- Head Icon -->
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='assets/bars-icon.svg') }}"
+      type="image/x-icon"
+    />
+    <!-- css framework  -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h2>To-Do : Lists and Tasks</h2>
+      </div>
+      <div class="task-input">
+        <img src="..static/assets/menu-left.svg" alt="menu-left.png" />
+        <input type="text" placeholder="Tambahkan tugas baru" />
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span class="active" id="all">All</span>
+          <span class="active" id="pending">Pending</span>
+          <span class="active" id="completed">Completed</span>
+        </div>
+        <button class="clear-btn">Clear All</button>
+      </div>
+      <ul class="task-box">
+        <!-- disini akan muncul list ketika kita enter -->
+      </ul>
+    </div>
+
+    <!-- connected to the script.js -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
