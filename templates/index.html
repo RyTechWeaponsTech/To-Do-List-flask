@@ -31,13 +31,13 @@
       </div>
       <div class="task-input">
         <img src="../static/assets/menu-left.svg" alt="menu-left.png" />
-        <input type="text" placeholder="Tambahkan tugas baru" />
+        <input type="text" placeholder="Add your new shit or smth" />
       </div>
       <div class="controls">
         <div class="filters">
           <span class="active" id="all">All</span>
-          <span class="active" id="pending">Pending</span>
-          <span class="active" id="completed">Completed</span>
+          <span class="pending" id="pending">Pending</span>
+          <span class="completed" id="completed">Completed</span>
         </div>
         <button class="clear-btn">Clear All</button>
       </div>
@@ -46,7 +46,9 @@
       </ul>
     </div>
 
-    <!-- connected to the script.js -->
+    <!-- Normal JS -->
+    <script src="../static/js/script.js"></script>
+    <!-- connected to the script.js for flask -->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
   </body>
 </html>
