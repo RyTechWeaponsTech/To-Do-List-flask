@@ -129,6 +129,11 @@ clear-btn.active {
   transform: scale(0.93);
 }
 
+.task-box {
+  margin-top: 20px;
+  padding: 0 15px 10px 20px;
+}
+
 /* sebenarnya masih ada lanjutan didalam taskbox */
 
 /* tapi nanti aja klo dh masuk Javascript hehehe */
